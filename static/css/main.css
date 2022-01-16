@@ -1,0 +1,8 @@
+/* Main CSS File*/
+
+h1 {
+    color: salmon;
+    padding: 20px;
+    background-color: aqua;
+    border-radius: 50px;
+}
