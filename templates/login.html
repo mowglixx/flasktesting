@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="form">
+    <h1 class="font-xl">{{title}}</h1>
+    <form action="/login" method="POST" class="login-form">
+        <label for="Username" class="font-lg">Username</label>
+        <input type="text" name="Username" placeholder="Username" class="display-block font-lg">
+        <label for="Password" class="font-lg m-1">Password</label>
+        <input type="password" name="Password" placeholder="Password" class="display-block font-lg">
+        <input type="submit" value="login" class="display-block font-lg">
+    </form>
+
+</div>
+{% endblock %}
