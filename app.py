@@ -30,7 +30,7 @@ def index():
 
 @app.route('/messagehelper/<string:title>')
 @app.route('/messagehelper/<string:title>/<string:content>')
-def message(title, content='On this page you can add your own title by typing in the addressbar after the <code>/title/&ltHere & gt</code>'):
+def message(title='Message Helper', content='On this page you can add your own title by typing in the addressbar after the <code>/title/&ltHere & gt</code>'):
     # decent example of GET use
     return render_template('messagehelper.html', title=title, content=content)
 
